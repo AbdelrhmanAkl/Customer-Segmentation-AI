@@ -40,7 +40,14 @@ st.markdown(
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
 html, body, [class*="st-"], .stApp, button, input, select, textarea {
   font-family: 'Manrope', system-ui, -apple-system, 'Segoe UI', sans-serif; }
-.stApp { background: #F5F6FA; }
+.stApp, [data-testid="stAppViewContainer"] {
+  background:
+    radial-gradient(900px 520px at 6% -5%, rgba(99,102,241,.24), transparent 60%),
+    radial-gradient(800px 520px at 100% 8%, rgba(14,165,233,.22), transparent 60%),
+    radial-gradient(900px 600px at 55% 112%, rgba(236,72,153,.14), transparent 60%),
+    linear-gradient(180deg, #F1F3FF 0%, #EAF3FF 50%, #F6F1FF 100%);
+  background-attachment: fixed; }
+[data-testid="stMain"], [data-testid="stMainBlockContainer"], .main { background: transparent; }
 [data-testid="stHeader"] { background: transparent; }
 [data-testid="stToolbar"], [data-testid="stDecoration"], #MainMenu, footer,
 [data-testid="stSidebar"], [data-testid="collapsedControl"] { display: none !important; }
@@ -73,6 +80,7 @@ html, body, [class*="st-"], .stApp, button, input, select, textarea {
 [data-testid="stVerticalBlockBorderWrapper"] { background:#fff; border:1px solid #E7E9F0 !important;
   border-radius:20px !important; box-shadow:0 1px 2px rgba(15,23,42,.04), 0 8px 24px rgba(15,23,42,.04); }
 [data-testid="stSlider"] { filter: hue-rotate(243deg); }
+[data-testid="stDataFrame"] { filter: hue-rotate(243deg); }
 [data-testid="stSlider"] label p, .stSelectbox label p, .stMultiSelect label p { font-weight:700; color:#0F172A; font-size:.92rem; }
 span[data-baseweb="tag"] { background:#EEF2FF !important; color:#3730A3 !important; }
 .stDownloadButton button { background:#0F172A; color:#fff; border:0; border-radius:12px; font-weight:700; padding:.55rem 1rem; }
