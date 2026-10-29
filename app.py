@@ -21,15 +21,15 @@ INK, MUTED, LINE = "#0F172A", "#64748B", "#E7E9F0"
 
 # name -> (persona, color, goal, action, KPI to watch)
 SEGMENTS = {
-    "High Income - High Spending": ("Champions", "#4F46E5", "Protect and grow",
+    "High Income - High Spending": ("Champions", "#E11D48", "Protect and grow",
         "Loyalty programs and premium offers.", "Repeat purchase rate"),
     "High Income - Low Spending": ("Untapped Potential", "#F59E0B", "Win more of their wallet",
         "Personalized campaigns. Look into what holds them back from buying.", "Conversion rate"),
-    "Low Income - High Spending": ("Eager Spenders", "#EC4899", "Reward without over-discounting",
+    "Low Income - High Spending": ("Eager Spenders", "#9333EA", "Reward without over-discounting",
         "Test affordable offers and targeted promotions.", "Promo response rate"),
     "Low Income - Low Spending": ("Budget Conscious", "#64748B", "Serve efficiently",
         "Value-oriented campaigns.", "Cost per conversion"),
-    "Average Income - Average Spending": ("Core Shoppers", "#0EA5E9", "Keep engaged",
+    "Average Income - Average Spending": ("Core Shoppers", "#0D9488", "Keep engaged",
         "Broad engagement and retention campaigns.", "Retention rate"),
 }
 FALLBACK = ["#7C3AED", "#EA580C", "#0891B2", "#65A30D", "#BE123C"]
@@ -42,10 +42,10 @@ html, body, [class*="st-"], .stApp, button, input, select, textarea {
   font-family: 'Manrope', system-ui, -apple-system, 'Segoe UI', sans-serif; }
 .stApp, [data-testid="stAppViewContainer"] {
   background:
-    radial-gradient(900px 520px at 6% -5%, rgba(99,102,241,.24), transparent 60%),
-    radial-gradient(800px 520px at 100% 8%, rgba(14,165,233,.22), transparent 60%),
-    radial-gradient(900px 600px at 55% 112%, rgba(236,72,153,.14), transparent 60%),
-    linear-gradient(180deg, #F1F3FF 0%, #EAF3FF 50%, #F6F1FF 100%);
+    radial-gradient(900px 520px at 4% -5%, rgba(251,146,60,.28), transparent 60%),
+    radial-gradient(800px 520px at 100% 8%, rgba(244,63,94,.18), transparent 60%),
+    radial-gradient(900px 600px at 55% 112%, rgba(168,85,247,.14), transparent 60%),
+    linear-gradient(180deg, #FFF6EE 0%, #FFF1F2 52%, #FAF5FF 100%);
   background-attachment: fixed; }
 [data-testid="stMain"], [data-testid="stMainBlockContainer"], .main { background: transparent; }
 [data-testid="stHeader"] { background: transparent; }
@@ -60,31 +60,29 @@ html, body, [class*="st-"], .stApp, button, input, select, textarea {
 .status i { width:8px; height:8px; border-radius:50%; background:#10B981; display:inline-block; }
 
 .hero { border-radius:24px; padding:2.6rem 2.6rem 2.2rem 2.6rem; color:#fff; margin-bottom:1.6rem;
-  background: radial-gradient(800px 340px at 92% -20%, rgba(255,255,255,.28), transparent 60%),
-              radial-gradient(600px 300px at 0% 120%, rgba(56,189,248,.45), transparent 60%),
-              linear-gradient(120deg, #4F46E5 0%, #7C3AED 48%, #0284C7 100%); }
+  background: radial-gradient(800px 340px at 92% -20%, rgba(255,255,255,.26), transparent 60%),
+              radial-gradient(600px 300px at 0% 120%, rgba(251,191,36,.5), transparent 60%),
+              linear-gradient(120deg, #EA580C 0%, #E11D48 52%, #A21CAF 100%); }
 .hero h1 { color:#fff; font-size:2.7rem; font-weight:800; letter-spacing:-.035em; line-height:1.1;
   margin:0 0 .8rem 0; padding:0; max-width:760px; }
-.hero p { color:#E0E7FF; font-size:1.08rem; line-height:1.55; max-width:620px; margin:0 0 1.8rem 0; }
+.hero p { color:#FFEDD5; font-size:1.08rem; line-height:1.55; max-width:620px; margin:0 0 1.8rem 0; }
 .hero-stats { display:grid; grid-template-columns:repeat(auto-fit,minmax(170px,1fr)); gap:1rem; }
 .hero-stat { background:rgba(255,255,255,.16); border:1px solid rgba(255,255,255,.3);
   border-radius:16px; padding:.9rem 1.1rem; }
-.hero-stat span { display:block; font-size:.82rem; color:#E0E7FF; font-weight:600; }
+.hero-stat span { display:block; font-size:.82rem; color:#FFEDD5; font-weight:600; }
 .hero-stat b { display:block; font-size:1.75rem; font-weight:800; letter-spacing:-.03em; margin-top:.15rem; }
-.hero-note { margin-top:1.1rem; font-size:.82rem; color:#E0E7FF; }
+.hero-note { margin-top:1.1rem; font-size:.82rem; color:#FFEDD5; }
 
 [data-testid="stTabs"] button[role="tab"] { padding:.7rem 1.1rem; }
 [data-testid="stTabs"] button[role="tab"] p { font-weight:700; font-size:.98rem; }
-[data-testid="stTabs"] [role="tablist"] { gap:.4rem; filter: hue-rotate(243deg); }
+[data-testid="stTabs"] [role="tablist"] { gap:.4rem; }
 
 [data-testid="stVerticalBlockBorderWrapper"] { background:#fff; border:1px solid #E7E9F0 !important;
   border-radius:20px !important; box-shadow:0 1px 2px rgba(15,23,42,.04), 0 8px 24px rgba(15,23,42,.04); }
-[data-testid="stSlider"] { filter: hue-rotate(243deg); }
-[data-testid="stDataFrame"] { filter: hue-rotate(243deg); }
 [data-testid="stSlider"] label p, .stSelectbox label p, .stMultiSelect label p { font-weight:700; color:#0F172A; font-size:.92rem; }
-span[data-baseweb="tag"] { background:#EEF2FF !important; color:#3730A3 !important; }
+span[data-baseweb="tag"] { background:#FFE4E6 !important; color:#9F1239 !important; }
 .stDownloadButton button { background:#0F172A; color:#fff; border:0; border-radius:12px; font-weight:700; padding:.55rem 1rem; }
-.stDownloadButton button:hover { background:#4F46E5; color:#fff; }
+.stDownloadButton button:hover { background:#E11D48; color:#fff; }
 
 .panel-title { font-size:1.08rem; font-weight:800; color:#0F172A; letter-spacing:-.01em; margin:0 0 .15rem 0; }
 .panel-sub { font-size:.88rem; color:#64748B; margin:0 0 1rem 0; }
@@ -211,7 +209,7 @@ st.markdown(
 <div class="topbar">
   <div class="brand">
     <svg width="30" height="30" viewBox="0 0 30 30"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
-    <stop offset="0" stop-color="#6366F1"/><stop offset="1" stop-color="#0EA5E9"/></linearGradient></defs>
+    <stop offset="0" stop-color="#F97316"/><stop offset="1" stop-color="#E11D48"/></linearGradient></defs>
     <rect width="30" height="30" rx="9" fill="url(#g)"/><circle cx="10" cy="11" r="3" fill="#fff"/>
     <circle cx="20" cy="10" r="2.2" fill="#fff" fill-opacity=".8"/><circle cx="15" cy="20" r="3.4" fill="#fff" fill-opacity=".9"/></svg>
     Customer Segmentation AI
@@ -368,8 +366,8 @@ with tab_segments:
                 unsafe_allow_html=True,
             )
             bars = go.Figure()
-            bars.add_trace(go.Bar(x=profiles["Persona"], y=profiles["Income"].round(1), name="Avg. income (k$)", marker_color="#4F46E5"))
-            bars.add_trace(go.Bar(x=profiles["Persona"], y=profiles["Spending"].round(1), name="Avg. spending score", marker_color="#F59E0B"))
+            bars.add_trace(go.Bar(x=profiles["Persona"], y=profiles["Income"].round(1), name="Avg. income (k$)", marker_color="#EA580C"))
+            bars.add_trace(go.Bar(x=profiles["Persona"], y=profiles["Spending"].round(1), name="Avg. spending score", marker_color="#DB2777"))
             style_fig(bars, 380)
             bars.update_layout(barmode="group", bargap=0.3)
             bars.update_yaxes(gridcolor="#EEF0F5", zeroline=False)
