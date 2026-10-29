@@ -42,9 +42,9 @@ html, body, [class*="st-"], .stApp, button, input, select, textarea {
   font-family: 'Manrope', system-ui, -apple-system, 'Segoe UI', sans-serif; }
 .stApp, [data-testid="stAppViewContainer"] {
   background:
-    radial-gradient(900px 520px at 4% -5%, rgba(251,146,60,.28), transparent 60%),
-    radial-gradient(800px 520px at 100% 8%, rgba(244,63,94,.18), transparent 60%),
-    radial-gradient(900px 600px at 55% 112%, rgba(168,85,247,.14), transparent 60%),
+    radial-gradient(900px 520px at 4% -5%, rgba(251,146,60,.16), transparent 60%),
+    radial-gradient(800px 520px at 100% 8%, rgba(244,63,94,.10), transparent 60%),
+    radial-gradient(900px 600px at 55% 112%, rgba(168,85,247,.09), transparent 60%),
     linear-gradient(180deg, #FFF6EE 0%, #FFF1F2 52%, #FAF5FF 100%);
   background-attachment: fixed; }
 [data-testid="stMain"], [data-testid="stMainBlockContainer"], .main { background: transparent; }
@@ -59,21 +59,22 @@ html, body, [class*="st-"], .stApp, button, input, select, textarea {
   background:#ECFDF5; border:1px solid #A7F3D0; padding:.3rem .8rem; border-radius:999px; }
 .status i { width:8px; height:8px; border-radius:50%; background:#10B981; display:inline-block; }
 
-.hero { border-radius:24px; padding:2.6rem 2.6rem 2.2rem 2.6rem; color:#fff; margin-bottom:1.6rem;
-  background: radial-gradient(800px 340px at 92% -20%, rgba(255,255,255,.26), transparent 60%),
-              radial-gradient(600px 300px at 0% 120%, rgba(251,191,36,.5), transparent 60%),
-              linear-gradient(120deg, #EA580C 0%, #E11D48 52%, #A21CAF 100%); }
-.hero h1 { color:#fff; font-size:2.7rem; font-weight:800; letter-spacing:-.035em; line-height:1.1;
+.hero { border-radius:24px; padding:2.6rem 2.6rem 2.2rem 2.6rem; color:#1F2937; margin-bottom:1.6rem;
+  background: radial-gradient(700px 300px at 95% -20%, rgba(255,255,255,.7), transparent 60%),
+              linear-gradient(120deg, #FFE3D1 0%, #FFD6E0 52%, #E8DAF6 100%);
+  border:1px solid rgba(255,255,255,.8); box-shadow:0 12px 32px rgba(190,110,90,.12); }
+.hero h1 { color:#1F2937; font-size:2.7rem; font-weight:800; letter-spacing:-.035em; line-height:1.1;
   margin:0 0 .8rem 0; padding:0; max-width:760px; }
-.hero p { color:#FFEDD5; font-size:1.08rem; line-height:1.55; max-width:620px; margin:0 0 1.8rem 0; }
+.hero p { color:#475569; font-size:1.08rem; line-height:1.55; max-width:620px; margin:0 0 1.8rem 0; }
 .hero-stats { display:grid; grid-template-columns:repeat(auto-fit,minmax(170px,1fr)); gap:1rem; }
-.hero-stat { background:rgba(255,255,255,.16); border:1px solid rgba(255,255,255,.3);
+.hero-stat { background:rgba(255,255,255,.62); border:1px solid rgba(255,255,255,.9);
   border-radius:16px; padding:.9rem 1.1rem; }
-.hero-stat span { display:block; font-size:.82rem; color:#FFEDD5; font-weight:600; }
+.hero-stat span { display:block; font-size:.82rem; color:#64748B; font-weight:600; }
 .hero-stat b { display:block; font-size:1.75rem; font-weight:800; letter-spacing:-.03em; margin-top:.15rem; }
-.hero-note { margin-top:1.1rem; font-size:.82rem; color:#FFEDD5; }
+.hero-note { margin-top:1.1rem; font-size:.82rem; color:#64748B; }
 
 [data-testid="stTabs"] button[role="tab"] { padding:.7rem 1.1rem; }
+[data-testid="stTabs"] button[role="tab"]:focus, [data-testid="stTabs"] button[role="tab"]:focus-visible { outline:none; box-shadow:none; }
 [data-testid="stTabs"] button[role="tab"] p { font-weight:700; font-size:.98rem; }
 [data-testid="stTabs"] [role="tablist"] { gap:.4rem; }
 
